@@ -1,11 +1,11 @@
-var color       = '#D3E2F0 !important',
-    comments    = document.querySelectorAll('li.comment_holder.vote_holder'),
-    author      = document.querySelector('#main-content .vcard.author.full > a > span').innerHTML;
+var color       = '#F6EFD2 !important',
+    comments    = document.querySelectorAll('div.post.tree'),
+    author      = document.querySelector('#navigation.two_columns tbody tr td.one div.post.ord > div.dd > div.p a:nth-of-type(2)').innerHTML;
     
 for (var i = 0, commentsCount = comments.length; i < commentsCount; ++i) {
-    var commentAuthor = comments[i].querySelector('.nickname > a').innerHTML;
+    var commentAuthor = comments[i].querySelector('div.dd > div.p > a').innerHTML;
+
     if ( commentAuthor == author ) { 
-        comments[i].querySelector('.msg-meta').style.background = color;
-        comments[i].querySelector('.entry-content').style.background = color;
+        comments[i].querySelector('div.p').style.background = color;
     }
 }

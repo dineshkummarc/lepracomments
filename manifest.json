@@ -1,5 +1,5 @@
 {
-    "name": "Habrahabr Author Comment Highlighter",
+    "name": "Leprosorium Author Comment Highlighter",
     "version": "1.0",
     "description": "Highlight comments of the topic's author on the page",
     "background_page": "background.html",
@@ -7,7 +7,7 @@
     "content_scripts" : [
         {
             "matches" : [
-                "http://habrahabr.ru/*"
+                "http://*.leprosorium.ru/*"
             ],
             "js" : ["app.js"],
             "run_at" : "document_idle",
